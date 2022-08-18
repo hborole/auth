@@ -30,8 +30,6 @@ router.post(
 
     // Create a new user
     try {
-      console.log('Creating a user...');
-
       const user = User.build({ email, password });
       await user.save();
 
