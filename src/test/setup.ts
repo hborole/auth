@@ -10,6 +10,8 @@ declare global {
   var signin: () => Promise<string[]>;
 }
 
+jest.setTimeout(60000);
+
 beforeAll(async () => {
   process.env.JWT_KEY = 'asdfasdf';
 
